@@ -5,13 +5,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
+// /admin/board/notice/list, detail, deit, reg, del
 //@RestController
 @Controller
 public class NoticeController {
 	@GetMapping("list")	// list, detail, deit, reg, del
 	public String list(Model model) {
 		
-		model.addAttribute("test", "Hello");
+		model.addAttribute("test", "Hello~");
 		
 		return "list";
 	}
@@ -20,4 +22,5 @@ public class NoticeController {
 	public String detail() {
 		return "detail";
 	}
+	
 } 
